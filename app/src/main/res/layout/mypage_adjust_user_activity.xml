@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.user.mypage.MypageAdjust">
+
+    <Button
+        android:id="@+id/memberoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="회원탈퇴"
+        android:textSize="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/modiBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/modiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="변경"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/memberoutBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="108dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypageadjust2"
+        app:srcCompat="@drawable/people" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/profName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름" />
+
+            <TextView
+                android:id="@+id/profidview"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="이름" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/profPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="숫자만 입력!"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/phonecheck"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="연락처" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/profPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="변경할 비밀번호 입력!"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/password2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="비밀번호" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/nowprofAddress"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="현재 주소"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/nowAddress"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="현재 주소" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/profAddress"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:hint="주소 변경 시 주소 클릭!"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/modiFindAddressBtn"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_style"
+                android:text="주소"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/mypageadjust2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="내 정보 수정"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="12dp"
+        android:text="이미지 편집"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myPage"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/menu_mypage" />
+       <!--<item
+            android:id="@+id/nav_myLike"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            android:title="@string/menu_like" />-->
+        <item
+            android:id="@+id/nav_myOrder"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="@string/menu_myorder" />
+        <item
+            android:id="@+id/nav_myCard"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="@string/menu_addcard" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+            android:title="공지사항" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_gift_black_24dp"
+            android:title="이벤트" />
+        <item
+            android:id="@+id/nav_center"
+            android:icon="@drawable/ic_tag_faces_black_24dp"
+            android:title="고객센터" />
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:visible="false"
+                android:icon="@drawable/ic_directions_run_black_24dp"
+                android:title="@string/menu_logout" />
+
+        </menu>
+    </item>
+
+</menu>

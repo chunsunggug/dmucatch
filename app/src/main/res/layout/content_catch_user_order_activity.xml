@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".order.func_catch.CatchOrderUser"
+    tools:showIn="@layout/app_bar_catch_user_order_activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="188dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="51dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderInfo">
+
+        <TextView
+            android:id="@+id/nearInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:text="주변 가게 알람 전달 반경" />
+
+        <RadioGroup
+            android:id="@+id/nearG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/near1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="1km" />
+
+            <RadioButton
+                android:id="@+id/near3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="3km" />
+
+            <RadioButton
+                android:id="@+id/near5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="5km" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="37dp"
+        android:text="주문 정보"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/payCatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/orderPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="식사 인원을 입력해주세요."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/orderMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:hint="사용 예정 금액을 입력해주세요."
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:id="@+id/Orderchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/orderTake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현장 주문" />
+
+            <RadioButton
+                android:id="@+id/orderDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배달 주문" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/payCatch"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/button_style"
+        android:text="Catch"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+</android.support.constraint.ConstraintLayout>

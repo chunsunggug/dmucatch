@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="storelist">
+
+        <item>fitem1</item>
+        <item>fitem2</item>
+        <item>fitem3</item>
+        <item>fitem4</item>
+        <item>fitem5</item>
+        <item>fitem6</item>
+        <item>fitem7</item>
+
+    </string-array>
+
+    <string-array name="makeuser">
+
+        <item>010</item>
+        <item>02</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+</resources>

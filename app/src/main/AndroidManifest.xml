@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dmu.dmucatch">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".order.OrderDetail"></activity>
+        <activity android:name=".notice.AddNotice" />
+        <activity android:name=".notice.NoticeDetails" />
+        <activity android:name=".notice.MyOrderDetails" />
+        <activity android:name=".notice.MyCardActivity" />
+        <activity android:name=".notice.MyOrderActivity" />
+        <activity android:name=".notice.MyLikeActivity" />
+        <activity android:name=".utility.DaumAddressApi" />
+        <activity android:name=".notice.CenterActivity" />
+        <activity android:name=".notice.EventActivity" />
+        <activity android:name=".notice.NoticeActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main_csg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".member.user.account.FindIdPwdUser" />
+        <activity
+            android:name=".MainScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".member.user.account.FindPwdFinish" />
+        <activity android:name=".member.user.account.FindIdFinish" />
+        <activity android:name=".member.user.account.SignUpEnd" />
+        <activity android:name=".member.user.mypage.MypageUser" />
+        <activity android:name=".member.user.mypage.MypageAdjust" />
+        <activity android:name=".order.OrderTake" />
+        <activity android:name=".order.OrderDelivery" />
+        <activity android:name=".order.OrderInfo" />
+        <activity android:name=".order.OrderMenu" />
+        <activity android:name=".order.OrderBasket" />
+        <activity android:name=".order.func_catch.CatchFailedUser" />
+        <activity android:name=".order.func_catch.CatchWaitUser" />
+        <activity android:name=".order.func_catch.CatchConfirm" />
+        <activity android:name=".member.user.account.FindIdUser" />
+        <activity android:name=".member.user.account.FindPwdUser" />
+        <activity android:name=".order.SearchStore" />
+        <activity android:name=".member.user.account.SignUp" />
+        <activity android:name=".member.user.account.LoginUser" />
+        <activity android:name=".notice.ReadyActivity" />
+        <activity
+            android:name=".order.ListMenuUser"
+            android:label="@string/title_activity_menu_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".order.func_catch.CatchOrderUser"
+            android:label="CatchUserOrderActivity_csg"
+            android:theme="@style/AppTheme.NoActionBar"> <!-- 유저 캣치 알람 요청 연결 메니페스트 -->
+
+        </activity> <!-- 주변 가게 정보 확인 액티비티 연결 메니페스트 -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAFZsIPuEEheMTtIGYGQHFEAZYIV9sq06g" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="780bcb764ac471a6376b682264db98a1" />
+    </application>
+
+</manifest>

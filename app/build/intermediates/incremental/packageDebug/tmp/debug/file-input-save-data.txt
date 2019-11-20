@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Tue Nov 12 17:35:56 KST 2019
+1.base=C\:\\projects\\dmuCatch\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+2.path=lib/arm64-v8a/libDaumMapEngineApi.so
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=C\:\\projects\\dmuCatch\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+3.set=NATIVE_RESOURCE
+2.set=NATIVE_RESOURCE
+1.baseType=DIRECTORY
+3.path=lib/armeabi-v7a/libDaumMapEngineApi.so
+count=4
+1.set=NATIVE_RESOURCE
+0.path=classes.dex
+3.base=C\:\\projects\\dmuCatch\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+0.set=DEX
+0.base=C\:\\projects\\dmuCatch\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+2.baseType=DIRECTORY
+1.path=lib/armeabi/libDaumMapEngineApi.so
